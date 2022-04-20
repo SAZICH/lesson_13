@@ -1,0 +1,339 @@
+@import "null.css";
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+body {
+	background: url("../img/background.jpg") 0 0/ cover no-repeat;
+}
+
+
+.car-container {
+	animation: drive 9s linear 0s infinite;
+	transform: translateX(100%);
+}
+
+@keyframes drive {
+	0% {
+		transform: translateX(100%);
+
+	}
+	100% {transform: translateX(-100%);
+
+}
+}
+
+
+.car {
+	width: 400px;
+	height: 299px;
+	background-color:rgb(28, 124, 117);
+	position: relative;
+	top: 299px;
+	left: 700px;
+	border-radius: 24% 39% 10% 0% / 53% 57% 14% 16% ;
+	border: 2px solid  gold;
+	box-shadow:inset 1px 1px 10px rgb(173, 157, 136) ;
+}
+.car-top {
+	width: 176px;
+	height: 150px;
+	background-color:rgb(28, 124, 117);
+	position: absolute;
+	top: 449px;
+	left: 525px;
+	border-radius: 92% 0% 0% 11% / 41% 57% 14% 34% ;
+	border: 2px solid gold;
+	border-right: transparent;
+	box-shadow:inset 1px 1px 10px rgb(173, 157, 136) ;
+}
+
+.car-glass {
+	width: 399px;
+	height: 2px;
+	background-color:gold;
+	position: absolute;
+	top: 449px;
+	left: 700px;
+	box-shadow: 5px 2px 5px rgb(173, 157, 136) ;
+}
+.car-glass-one {
+	width: 2px;
+	height: 150px;
+	background-color: gold;
+	position: absolute;
+	top: 300px;
+	left: 900px;
+}
+
+.car-door-one {
+	width: 2px;
+	height: 150px;
+	background-color: gold;
+	position: absolute;
+	top: 449px;
+	left: 900px;
+	box-shadow:2px 2px 5px rgb(173, 157, 136) ;
+}
+
+.wheel-one {
+	width: 135px;
+	height: 135px;
+	border-radius: 50%;
+	background-color: blueviolet;
+	position: absolute;
+	top: 500px;
+	right: 800px ;
+	border: 4px dotted gold;
+	box-shadow:inset 1px 1px 10px rgb(173, 157, 136) ;
+	animation: wheel 10s linear 0s infinite reverse ;
+}
+@keyframes wheel {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+.wheel-two {
+	width: 135px;
+	height: 135px;
+	border-radius: 50%;
+	background-color: blueviolet;
+	position: absolute;
+	top: 500px;
+	right: 475px ;
+	border: 4px dotted gold;
+	box-shadow:inset 1px 1px 10px rgb(173, 157, 136) ;
+	animation: wheel 10s linear 0s infinite reverse ;
+}
+
+@keyframes wheel {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.glass-one {
+	width: 187px;
+	height: 140px;
+	background-color: rgb(65, 174, 225);
+	position: relative;
+	top: 6px;
+	left: 710px;
+	border-radius:  
+	48% 0% 0% 0% / 100% 57% 14% 2%;
+	border: 2px solid  gold;
+	
+}
+
+.glass-two {
+	width: 180px;
+	height: 140px;
+	background-color: rgb(65, 174, 225);
+	position: absolute;
+	top: 305px;
+	left: 905px;
+	border-radius:  
+	0% 79% 0% 0% / 44% 100% 0% 10% ;
+	border: 2px solid  gold;
+}
+.wheel-inside-one {
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	background-color:goldenrod;
+	position: absolute;
+	top: 525px;
+	right: 499px ;
+	border: 4px dotted blueviolet;
+	box-shadow:inset 1px 1px 10px rgb(173, 157, 136) ;
+   animation: wheel-inside 10s linear 0s infinite normal ;
+}
+@keyframes wheel-inside {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.wheel-inside-two {
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	background-color:goldenrod;
+	position: absolute;
+	top: 525px;
+	right: 825px ;
+	border: 4px dotted blueviolet;
+	box-shadow:inset 1px 1px 10px rgb(173, 157, 136) ;
+	animation: wheel-inside 10s linear 0s infinite normal ;
+
+}
+@keyframes wheel-inside {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.car-door {
+	width: 1px;
+	height: 59px;
+	background-color: gold;
+	position: absolute;
+	top: 449px;
+	left: 700px;
+
+}
+.car-lamp {
+	border-radius:100% 51% 32% 46% / 100% 45% 37% 70% ;
+	background-color: yellow;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	left: 520px;
+	top:490px;
+	border: 1px solid whitesmoke;
+	box-shadow: -20px 0px 20px 15px whitesmoke;
+	animation: lamp 0.5s linear 0s infinite alternate;
+}
+
+@keyframes lamp {
+	0% { transform: scale(0.8);
+		
+	}
+	100% { transform: scale(1) ;
+		
+	}
+}
+.car-pipe {
+	width: 27px;
+	height: 10px;
+	background-color: rgb(209, 229, 94);
+	position: absolute;
+	top:580px ;
+	right: 427px ;
+	border-radius: 3px;
+	border: 1px solid rgb(67, 83, 72);
+	transform: rotate(30deg); 
+}
+.smoke {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	right: 310px;
+	bottom: -160px ;
+}
+
+.car-handle {
+	width: 27px;
+	height: 10px;
+	background-color: rgb(229, 94, 211);
+	position: absolute;
+	top:470px ;
+	right: 650px ;
+	border-radius: 6px;
+	border: 1px solid rgb(67, 83, 72);
+
+}
+.car-rudder {
+	width: 40px;
+	height: 10px;
+	background-color: rgb(147, 77, 238);
+	position: absolute;
+	top:425px ;
+	right: 786px ;
+	border-radius: 6px;
+	transform: rotate(-30deg);
+	border: 1px solid rgb(67, 83, 72);
+
+}
+.car-rudder-one {
+	width: 40px;
+	height: 10px;
+	background-color: rgb(147, 77, 238);
+	position: absolute;
+	top:415px ;
+	right: 770px ;
+	border-radius: 6px; 
+	transform: rotate(60deg);
+	border: 1px solid rgb(67, 83, 72);
+
+}
+.batman-image {
+	perspective: 200px;
+	position: relative;
+	animation: head 200ms linear 0s infinite alternate;
+}
+
+@keyframes head {
+	0% {
+		transform: scale(0.95);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+.batman {
+	width: 120px;
+	height: 120px;
+	position: absolute ;
+	top:-117px;
+	right: 675px;
+	transform: rotateY(-60deg);
+}
+
+
+.shield {
+	position: relative;
+
+}
+
+
+.shield-item {
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	top: -500px ;
+	left: -100px;
+	animation: shield 9s ease-out 3s infinite normal forwards;
+	
+}
+@keyframes shield {
+	0%{transform: translate(1px,1px) rotate(180deg);
+	}
+	13% { transform: translate(900px,180px) rotate(-180deg);
+		
+	}
+	20% {
+		transform: translate(1500px,-10px) rotate(180deg);
+	}
+	60% {
+		transform: translate(1500px,-10px) rotate(-180deg);
+	}
+	70% {
+		transform: translate(1500px,-10px) rotate(180deg);
+	}
+	80% {
+		transform: translate(1500px,-10px) rotate(-180deg);
+	}
+	90% {
+		transform: translate(1500px,-10px) rotate(180deg);
+	}
+	100% {
+		transform: translate(1px,1px) rotate(-180deg) ;
+	}
+
+	
+	
+}
